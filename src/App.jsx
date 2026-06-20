@@ -8,7 +8,7 @@ function App() {
 const [todos, setTodos] = useState([])
 
 useEffect(() => {
-  fetch('http://localhost:3000/todos')
+  fetch('https://my-first-site-ngb8.onrender.com/todos')
     .then(res => res.json())
     .then(data => setTodos(data))
 }, [])
